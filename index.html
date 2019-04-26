@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Babel + Webpack, Loaders, Plugins + ESLint</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <span class="container navbar-brand mb-0 h1">User Crud</span>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div id="users"></div>
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh; margin-top: -56px">
+          <button class="btn btn-primary js_add">Agregar Usuario</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal fade js_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <h5 class="modal-title">Agregar usuario</h5>
+              <button type="button" class="js_close close">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <input required type="text" class="form-control js_nombres" id="formGroupExampleInput"
+                      placeholder="Nombres">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <input required type="text" class="form-control js_apellidos" id="formGroupExampleInput"
+                      placeholder="Apellidos">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <input required type="email" class="form-control js_correo" id="formGroupExampleInput"
+                      placeholder="Correo">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <input required type="tel" class="form-control js_telefono" id="formGroupExampleInput"
+                      placeholder="Telefono">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <select required class="custom-select js_pais">
+                      <option selected>Pais</option>
+                      <option value="1">Peru</option>
+                      <option value="2">Abu Dhabi</option>
+                      <option value="3">Venezuela</option>
+                      <option value="4">Arequipa</option>
+                      <option value="5">Lituania</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <input required type="link" class="form-control js_url" id="formGroupExampleInput"
+                      placeholder="URL de Fotografia">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <textarea required class="form-control js_texto" id="exampleFormControlTextarea1"
+                      placeholder="Sobre mi"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="submit" class="js_save btn btn-primary">Aceptar</button>
+              <button type="button" class="js_close btn btn-secondary">Cerrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade js_modal_delete">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Eliminar</h5>
+            <button type="button" class="js_close close">
+              <span>&times;</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <p>Estas seguro que quieres eliminar a este usuario??</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="submit" class="js_btn js_accept btn btn-primary">Aceptar</button>
+              <button type="button" class="js_btn js_cancel btn btn-secondary">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
